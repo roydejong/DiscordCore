@@ -1,10 +1,6 @@
 ﻿using Discord;
 using IPA.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static Discord.ActivityManager;
 
 namespace DiscordCore
@@ -131,8 +127,9 @@ namespace DiscordCore
                     Enabled = true;
                     DiscordManager.active = true;
                 }
-                catch (Discord.ResultException e)
+                catch (ResultException __)
                 {
+                    _ = __;
                     Disable(true);
                     throw;
                 }

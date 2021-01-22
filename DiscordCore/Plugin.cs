@@ -1,14 +1,4 @@
-﻿using BeatSaberMarkupLanguage.Settings;
-using BS_Utils.Utilities;
-using DiscordCore.UI;
-using IPA;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using IPA;
 
 namespace DiscordCore
 {
@@ -23,5 +13,8 @@ namespace DiscordCore
             Plugin.log = log;
             DiscordManager manager = DiscordManager.instance;
         }
+
+        [OnEnable, OnDisable]
+        public void OnState() { /* On State */ }
     }
 }

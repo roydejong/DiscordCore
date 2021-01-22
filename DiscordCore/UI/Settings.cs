@@ -1,15 +1,10 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Components;
 using BeatSaberMarkupLanguage.Parser;
-using BeatSaberMarkupLanguage.ViewControllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using TMPro;
-using UnityEngine;
 using UnityEngine.UI;
 
 namespace DiscordCore.UI
@@ -124,15 +119,16 @@ namespace DiscordCore.UI
             private DiscordInstance modInstance;
 
             [UIParams]
-            private BSMLParserParams parserParams;
+            protected BSMLParserParams parserParams;
 
             [UIComponent("mod-name")]
-            private TextMeshProUGUI modName;
+            protected TextMeshProUGUI modName;
+
             [UIComponent("mod-icon")]
-            private Image modIcon;
+            protected Image modIcon;
 
             [UIValue("enable-mod")]
-            private bool enableMod;
+            protected bool enableMod;
 
             public ModListObject(DiscordInstance instance)
             {
