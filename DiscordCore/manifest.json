@@ -2,14 +2,15 @@
     "$schema": "https://github.com/nike4613/BSIPA-MetadataFileSchema/master/Schema.json",
     "author": "andruzzzhka",
     "description": "A plugin for Discord integration in Beat Saber",
-    "gameVersion": "1.16.1",
+    "gameVersion": "1.16.4",
     "id": "DiscordCore",
     "name": "DiscordCore",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "dependsOn": {
-      "BSIPA": "^4.1.6",
-      "DiscordGameSDK": "^2.5.6",
-      "BeatSaberMarkupLanguage": "^1.5.3"
+      "BSIPA": "^4.2.0",
+      "DiscordGameSDK": "^2.5.7",
+      "BeatSaberMarkupLanguage": "^1.5.4",
+      "FizzyUtils": "^1.0.1"
     },
     "links": {
       "project-source": "https://github.com/andruzzzhka/DiscordCore"
